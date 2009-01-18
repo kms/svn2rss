@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
+<!-- svn2rss -->
 <!-- Transform Subversion XML changelogs into RSS 1.0 feed. -->
-<!-- (c) Karl-Martin Skontorp <kms@skontorp.net> -->
+<!-- -->
+<!-- (c) Karl-Martin Skontorp kms@skontorp.net ~ http://picofarad.org/ -->
+<!-- Licensed under the GNU GPL 2.0 or later. -->
 
 <xsl:stylesheet version="1.0" 
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
