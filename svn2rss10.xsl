@@ -17,10 +17,10 @@
         <rdf:RDF>
             <channel>
                 <title>SVN Changelog</title>
-		<dc:date>
-		    <xsl:value-of
-		    select="document('http://xml.skontorp.net/misc/datetime.php')/datetime/full-iso8601" />
-		</dc:date>
+                <dc:date>
+                    <xsl:value-of
+                    select="document('http://xml.skontorp.net/misc/datetime.php')/datetime/full-iso8601" />
+                </dc:date>
             </channel>
             <xsl:apply-templates select="/log/logentry" />
         </rdf:RDF>
@@ -29,17 +29,17 @@
     <xsl:template match="/log/logentry">
         <item>
             <title>
-	        <xsl:text>[</xsl:text>
-	        <xsl:value-of select="date" />
-	        <xsl:text>] Rev. </xsl:text>
+                <xsl:text>[</xsl:text>
+                <xsl:value-of select="date" />
+                <xsl:text>] Rev. </xsl:text>
                 <xsl:value-of select="@revision" />
-	        <xsl:text> (</xsl:text>
-	        <xsl:value-of select="author" />
-	        <xsl:text>)</xsl:text>
+                <xsl:text> (</xsl:text>
+                <xsl:value-of select="author" />
+                <xsl:text>)</xsl:text>
             </title>
-	    <description>
-	        <xsl:value-of select="msg" />
-	    </description>
+            <description>
+                <xsl:value-of select="msg" />
+            </description>
         </item>
     </xsl:template>
 
